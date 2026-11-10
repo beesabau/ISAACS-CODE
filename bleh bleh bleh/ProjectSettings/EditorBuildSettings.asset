@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bar.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: 2b78006ab482fa244a58807593190ef2
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: a812c7449b0ae0b499ec0ed7e34fa424
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: 0ffaf52321cdc094488233e35c27e7d5
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 189adc29abaaf8e489057c25c386b94f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
