@@ -19,7 +19,7 @@ public class PlayerInputReader : MonoBehaviour
     void Update()
     {
         Vector2 input = movementInput.Player.Movement.ReadValue<Vector2> ();
-        Vector3 direction = new Vector3(0, 0, input.x);
+        Vector3 direction = new Vector3(input.y, 0, input.x);
         playerController.Movement(direction);
          
     }
