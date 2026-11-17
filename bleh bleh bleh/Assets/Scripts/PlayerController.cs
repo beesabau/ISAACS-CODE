@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementSpeed = 5f; // player character's default movement speed
     private CharacterController controller; // physics for collision
     private Vector3 startPosition; // start position
+    // public float moveSpeed; -- probably unncesessary?
+
+    //public SpriteRenderer spriteRenderer;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,5 +22,6 @@ public class PlayerController : MonoBehaviour
     public void Movement(Vector3 direction)
     {
         controller.Move(direction * movementSpeed * Time.deltaTime);
+
     }
 }
