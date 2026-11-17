@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInputReader : MonoBehaviour
 
@@ -13,6 +14,9 @@ public class PlayerInputReader : MonoBehaviour
     {
         movementInput = new GameInputs();
         movementInput.Player.Enable();
+
+        movementInput.Player.Interaction.performed += OnInteraction; // Actions documentation
+        movementInput.Player.Talk.performed += OnTalk; // Actions documentation
     }
 
     // Update is called once per frame
@@ -22,5 +26,15 @@ public class PlayerInputReader : MonoBehaviour
         Vector3 direction = new Vector3(input.y, 0, input.x);
         playerController.Movement(direction);
          
+    }
+
+    void OnInteraction(InputAction.CallbackContext context) // Action Assets documentation
+    {
+            playerController.PickUpItem();
+    }
+
+    void OnTalk(InputAction.CallbackContext context) // Action Assets documentation
+    {
+      
     }
 }

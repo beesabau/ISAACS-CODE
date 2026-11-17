@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Sprite placeholder_Front;
     [SerializeField] private Sprite placeholder_Back;
 
+    private PickupItems item;
+
     private Vector3 startPosition; // start position
     // public float moveSpeed; -- probably unncesessary?
 
@@ -34,6 +36,10 @@ public class PlayerController : MonoBehaviour
         {
             spriteRenderer.sprite = placeholder_Back;
         }
+    }
 
+    public void PickUpItem()
+    {
+        
     }
 }
