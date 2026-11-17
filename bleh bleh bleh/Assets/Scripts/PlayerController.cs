@@ -3,8 +3,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    [SerializeField] private float movementSpeed = 5f; // player character's default movement speed
+    [SerializeField] private float movementSpeed = 5f; // player charac ter's default movement speed
     private CharacterController controller; // physics for collision
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite placeholder_Front;
+    [SerializeField] private Sprite placeholder_Back;
+
     private Vector3 startPosition; // start position
     // public float moveSpeed; -- probably unncesessary?
 
@@ -22,6 +26,14 @@ public class PlayerController : MonoBehaviour
     public void Movement(Vector3 direction)
     {
         controller.Move(direction * movementSpeed * Time.deltaTime);
+        if (direction.x < 0) //moving towards camera
+        {
+            spriteRenderer.sprite = placeholder_Front;
+        }
+        else if (direction.x > 0) //moving away from camera
+        {
+            spriteRenderer.sprite = placeholder_Back;
+        }
 
     }
 }

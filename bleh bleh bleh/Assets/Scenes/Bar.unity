@@ -319,6 +319,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
+  spriteRenderer: {fileID: 1891034813}
+  placeholder_Front: {fileID: 21300000, guid: 30253000360cab94fad2d697f0bfb6c0, type: 3}
+  placeholder_Back: {fileID: 21300000, guid: bee74a379115ff74ca52f02689a99f32, type: 3}
 --- !u!114 &96672380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2335,6 +2338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
+  spriteRenderer: {fileID: 1891034813}
+  placeholder_Front: {fileID: 21300000, guid: 30253000360cab94fad2d697f0bfb6c0, type: 3}
+  placeholder_Back: {fileID: 21300000, guid: bee74a379115ff74ca52f02689a99f32, type: 3}
 --- !u!54 &1891034818
 Rigidbody:
   m_ObjectHideFlags: 0
