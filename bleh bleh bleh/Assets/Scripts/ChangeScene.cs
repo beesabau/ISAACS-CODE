@@ -11,13 +11,13 @@ public class ChangeScene : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        print("starting");
+        //print("starting");
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("please");
+        //print("please");
         if (collision.gameObject.CompareTag("Player"))
             SceneManager.LoadScene(nextSceneName);
     }

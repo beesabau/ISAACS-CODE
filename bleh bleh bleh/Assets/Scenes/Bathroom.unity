@@ -194,6 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
+  spriteRenderer: {fileID: 0}
+  placeholder_Front: {fileID: 0}
+  placeholder_Back: {fileID: 0}
 --- !u!136 &128798238
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -346,6 +349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
+  spriteRenderer: {fileID: 128798239}
+  placeholder_Front: {fileID: 21300000, guid: 30253000360cab94fad2d697f0bfb6c0, type: 3}
+  placeholder_Back: {fileID: 21300000, guid: bee74a379115ff74ca52f02689a99f32, type: 3}
 --- !u!4 &270870017
 Transform:
   m_ObjectHideFlags: 0
@@ -936,6 +942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
   nextSceneName: Bar
+  currentSceneName: Bathroom
 --- !u!1 &1105823324
 GameObject:
   m_ObjectHideFlags: 0

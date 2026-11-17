@@ -1722,6 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
   nextSceneName: Outside
+  currentSceneName: Bar
 --- !u!1 &881153786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
   nextSceneName: Bathroom
+  currentSceneName: Bar
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
