@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Bathroom.unity
     guid: 0ffaf52321cdc094488233e35c27e7d5
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MENU SCENES/MainMenu.unity
     guid: 189adc29abaaf8e489057c25c386b94f
+  - enabled: 1
+    path: Assets/Scenes/MENU SCENES/MenuCredits.unity
+    guid: c4dd6f8c3b026ec479738e14be5e8d66
+  - enabled: 1
+    path: Assets/Scenes/MENU SCENES/MenuSettings.unity
+    guid: 4eaa9279aeafc4d4bb3ff12f995f9c32
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

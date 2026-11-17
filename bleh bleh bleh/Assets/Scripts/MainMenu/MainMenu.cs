@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,6 +17,21 @@ public class MainMenu : MonoBehaviour
 
     public void LoadGame() // to load the game scene
     {
-        
+        SceneManager.LoadScene("Bar");
+    }
+
+    public void LoadSettings() // to load the game scene
+    {
+        SceneManager.LoadScene("MenuSettings");
+    }
+
+    public void LoadCredits() // to load the game scene
+    {
+        SceneManager.LoadScene("MenuCredits");
+    }
+
+    public void QuitGame() // to load the game scene
+    {
+        Application.Quit();
     }
 }
