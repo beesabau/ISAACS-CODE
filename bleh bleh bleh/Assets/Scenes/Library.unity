@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFader
   fadeSpeed: 2.5
-  fadeAmount: 0
+  fadeAmount: 0.25
   DoFade: 0
 --- !u!1 &26679341
 GameObject:
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFader
   fadeSpeed: 2.5
-  fadeAmount: 0
+  fadeAmount: 0.25
   DoFade: 0
 --- !u!1 &410087039
 GameObject:
@@ -1876,8 +1876,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd102c20a70e47e48b15ebb9e5c9e9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFader
-  fadeSpeed: 2.5
-  fadeAmount: 0
+  fadeSpeed: 1.5
+  fadeAmount: 0.25
   DoFade: 0
 --- !u!1 &1990176757
 GameObject:
