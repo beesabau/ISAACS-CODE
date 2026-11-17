@@ -33,5 +33,6 @@ public class MainMenu : MonoBehaviour
     public void QuitGame() // to load the game scene
     {
         Application.Quit();
+        Debug.Log("Quit");
     }
 }
