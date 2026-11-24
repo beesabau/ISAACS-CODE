@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    [SerializeField] private float movementSpeed = 5f; // player charac ter's default movement speed
+    [SerializeField] private float movementSpeed = 5f; // player character's default movement speed
     private CharacterController controller; // physics for collision
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite placeholder_Front;
@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     private PickupItems item;
 
     private Vector3 startPosition; // start position
-    // public float moveSpeed; -- probably unncesessary?
 
     //public SpriteRenderer spriteRenderer;
 
