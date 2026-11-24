@@ -1,4 +1,4 @@
-using UnityEngine;
+/* using UnityEngine;
 
 public class Cam : MonoBehaviour
 {
@@ -41,4 +41,4 @@ public class Cam : MonoBehaviour
             }
         }
     }
-}
+} */
