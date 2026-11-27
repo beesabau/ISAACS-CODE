@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     public void Movement(Vector3 direction)
     {
+        Debug.Log("pp" +controller.enabled);
+        controller = GetComponent<CharacterController>();
         controller.Move(direction * movementSpeed * Time.deltaTime);
         if (direction.x < 0) //moving towards camera
         {
