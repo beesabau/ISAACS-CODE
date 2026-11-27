@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic; // why isn't this included by default anymore :(
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Sprite placeholder_Front;
     [SerializeField] private Sprite placeholder_Back;
 
+    [SerializeField] private List<string> inventory = new List<string>(); // list for items in inventory; string for characters as opposed to int for numbers. please don't mix them up
     private PickupItems item;
 
     private Vector3 startPosition; // start position
@@ -39,6 +41,27 @@ public class PlayerController : MonoBehaviour
 
     public void PickUpItem()
     {
-        
+        if (item != null)
+        {
+            inventory.Add(item.PickupItem);
+            item.PickingUp(); // from PickupItems script. is there a reason why i'm not just destroying the item in this script? idk. we'll see
+            item = null; // turn that thing offfff
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent(out PickupItems collectibleItem)) // checks if item has PickupItems script; puts it into collectibleItem temporarily
+        {
+            item = collectibleItem;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.TryGetComponent(out PickupItems collectibleItem)) // checks if item has PickupItems script and nulls it once player exits collider
+        {
+            item = null;
+        }
     }
 }

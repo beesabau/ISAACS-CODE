@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,42 +9,45 @@ public class PauseMenu : MonoBehaviour
     private GameInputs menuInput;
     public GameObject pauseMenuUI;
 
-    // Update is called once per frame
-    void Update()
+    public void TogglePause()
     {
-        menuInput = new GameInputs();
-        menuInput.Player.Enable();
-
-        menuInput.Player.Interaction.performed += OnMenu;
-
-        /* if (InputSystem.Keyboard.current.spaceKey.isPressed)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }*/
-
-        void OnMenu(InputAction.CallbackContext context) // Action Assets documentation
+        if (GameIsPaused)
         {
-
+            Resume();
         }
-
-        void Resume()
+        else
         {
-            GameIsPaused = false;
-            pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
+            Pause();
         }
+    }
 
-        void Pause()
-        {
-            GameIsPaused = true;
-            pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
+    public void Resume()
+    {
+        GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+    }
 
-        }
+    void Pause()
+    {
+        GameIsPaused = true;
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
+
+    public void LoadOptions()
+    {
+        SceneManager.LoadScene("MenuSettings");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
